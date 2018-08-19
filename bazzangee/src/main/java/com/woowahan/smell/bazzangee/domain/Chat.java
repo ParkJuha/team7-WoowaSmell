@@ -3,7 +3,6 @@ package com.woowahan.smell.bazzangee.domain;
 import javax.persistence.*;
 import java.util.List;
 
-// test
 @Entity
 public class Chat {
     @Id

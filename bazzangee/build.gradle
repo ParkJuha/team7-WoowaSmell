@@ -35,6 +35,8 @@ dependencies {
     compile('pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.0')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-websocket')
+    compile('org.webjars:sockjs-client:1.0.2')
+    compile('org.webjars:stomp-websocket:2.3.3')
     runtime('org.springframework.boot:spring-boot-devtools')
     compile('org.hibernate:hibernate-java8')
     compile('mysql:mysql-connector-java')

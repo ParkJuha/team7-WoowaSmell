@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class MebMvcConfig implements WebMvcConfigurer {
+public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addFormatters(FormatterRegistry registry) {
         registry.addConverter(new LocalDateConverter("yyyy-MM-dd"));
@@ -32,5 +32,6 @@ public class MebMvcConfig implements WebMvcConfigurer {
         registry.addViewController("/").setViewName("/index");
         registry.addViewController("/reviews").setViewName("/review/create");
         registry.addViewController("/reviews/update").setViewName("/review/update");
+        registry.addViewController("/chat").setViewName("/chat/main");
     }
 }
