@@ -8,7 +8,10 @@ timeline.css
 } /* Made with http://icomoon.io/ */
 
 #buttons{
-	margin-top: 150px;
+	margin-top: 97px;
+	padding-left: 30px;
+	background: url('/img/menu_image/categories.jpg');
+	background-size: 110px;
 }
 
 #timeline-align-container{
