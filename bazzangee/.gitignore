@@ -24,3 +24,8 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+### Team7 Security Files ###
+application.properties
+.travis.yml
+aws.yml
