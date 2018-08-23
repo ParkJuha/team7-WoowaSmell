@@ -110,3 +110,12 @@
     transition:800ms ease all;
     outline:none;
 }
+.category-button1 {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+.category-image {
+  width: 110px;
+  height: 110px;
+}
