@@ -2,16 +2,12 @@ package com.woowahan.smell.bazzangee.domain;
 
 import com.woowahan.smell.bazzangee.dto.UserLoginDto;
 import com.woowahan.smell.bazzangee.exception.NotMatchException;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
-
 
 @Getter
 @Entity
@@ -48,10 +44,19 @@ public class User extends BaseTimeEntity {
         this.type = UserType.NORMAL;
     }
 
-    public User(String userId, String name, UserType type) {
+    public User(String userId, String password, String name, String imageUrl, UserType type) {
         this.userId = userId;
+        this.password = password;
         this.name = name;
         this.type = type;
+        this.imageUrl = imageUrl;
+    }
+
+    public User(Long id, String userId, String name, String imageUrl) {
+        this.id = id;
+        this.userId = userId;
+        this.name = name;
+        this.imageUrl = imageUrl;
     }
 
     public boolean matchPasswordBy(UserLoginDto userLoginDto, PasswordEncoder passwordEncoder) {
@@ -59,6 +64,15 @@ public class User extends BaseTimeEntity {
             throw new NotMatchException("패스워드가 일치하지 않습니다.");
         }
         return true;
+    }
+
+    public User toLimitInfoUser() {
+        return new User(
+                this.id,
+                this.userId,
+                this.name,
+                this.imageUrl
+        );
     }
 
     @Override
@@ -74,5 +88,9 @@ public class User extends BaseTimeEntity {
     public int hashCode() {
 
         return Objects.hash(userId, password);
+    }
+
+    public void updatePassword(String password) {
+        this.password = password;
     }
 }

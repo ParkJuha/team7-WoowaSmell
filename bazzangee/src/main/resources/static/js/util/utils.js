@@ -10,7 +10,7 @@ export function fetchManager({ url, method, body, headers, callback, errCallback
                 return false;
             }
             response.json().then(res => {
-                errCallback(res);
+                errCallback(res, response.status);
             })
         })
 }
@@ -23,4 +23,16 @@ export function throttle(callback, wait) {
             time = Date.now();
         }
     }
+}
+
+export function addDropdownListener() {
+    $(".menubar").addEventListener("click", (event) => {
+        const display = $(".menuitem").style.display;
+        if(display == "none") {
+            $(".menuitem").style.display = "block";
+            return;
+        }
+        $(".menuitem").style.display = "none";
+        return;
+    })
 }

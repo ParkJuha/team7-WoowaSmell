@@ -9,6 +9,7 @@ import support.test.AcceptanceTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+
 public class ApiUserAcceptanceTest extends AcceptanceTest {
     private UserLoginDto userLoginDto;
 

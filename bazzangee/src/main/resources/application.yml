@@ -1,9 +1,6 @@
 spring:
   profiles:
     active: local
-  devtools:
-    livereload:
-      enabled: true
   servlet:
     multipart:
       max-file-size: 10MB
@@ -43,6 +40,11 @@ spring:
   h2:
     console:
       enabled: true
+  redis:
+    host: localhost
+    password: password
+    port: 6379
+
 ---
 spring:
   profiles: dev

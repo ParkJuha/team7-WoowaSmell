@@ -45,7 +45,7 @@ public class OrderFoodService {
         }
         orderFoods = orderFoods
                 .stream()
-                .filter(orderFood -> { return orderFood.getFood().getRestaurant().getFoodCategory().equals(foodCategory);})
+                .filter(orderFood -> { return foodCategory.equals(orderFood.getFood().getRestaurant().getFoodCategory());})
                 .collect(Collectors.toList());
         if (orderFoods.isEmpty()) {
             throw new NotMatchException("there is no OrderFoods by this category!");
@@ -71,14 +71,23 @@ public class OrderFoodService {
         if (orderFoods.isEmpty()) {
             throw new NotMatchException("there is no OrderFoods!");
         }
+        log.info("orderFoods : {}", orderFoods);
         orderFoods = orderFoods
                 .stream()
-                .filter(orderFood -> orderFood.hasValidReview() && orderFood.getReview().getFoodCategory().equals(foodCategory))
+                .filter(orderFood -> orderFood.hasValidReview() && foodCategory.equals(orderFood.getReview().getFoodCategory()))
                 .collect(Collectors.toList());
         Collections.sort(orderFoods, new StarPointComparator());
         if (orderFoods.isEmpty()) {
             throw new NotMatchException("there is no OrderFoods by this category!");
         }
         return orderFoods;
+    }
+
+    public List<OrderFood> getListsOrderByGoodsCount(User user) {
+        return orderFoodRepository.findAllByOrderedUserOrderByGoodCountDesc(user);
+    }
+
+    public List<OrderFood> getListsByCategoryOrderByGoodsCount(User user, Long categoryId) {
+        return orderFoodRepository.findAllByCategoryOrderByGoodsCount(user, foodCategoryRepository.findById(categoryId).orElseThrow(() -> new NotMatchException("선택하신 음식 카테고리가 존재하지 않습니다.!")));
     }
 }

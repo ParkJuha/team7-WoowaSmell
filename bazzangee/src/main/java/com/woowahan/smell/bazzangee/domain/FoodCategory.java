@@ -2,7 +2,6 @@ package com.woowahan.smell.bazzangee.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
-import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
