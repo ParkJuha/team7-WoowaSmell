@@ -12,6 +12,11 @@ import static com.woowahan.smell.bazzangee.utils.HttpSessionUtils.getUserFromSes
 @Controller
 public class HomeController {
 
+    @GetMapping("/map")
+    public String daummap() {
+        return "/daummap";
+    }
+
     @GetMapping("/")
     public String home(HttpSession session, Model model) {
         User loginUser = getUserFromSession(session);

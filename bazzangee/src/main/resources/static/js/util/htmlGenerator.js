@@ -27,14 +27,14 @@ const HtmlGenerator = (function () {
                                         <p>${reviewDto.review.contents}</p>
                                         <p class="t-right fs07em">${reviewDto.userName}</p>
                                         <p class="t-right">
-                                            <a href="#" style="font-weight: 600; color: aliceblue">
-                                                <i class="fa fa-map-marker"></i>${reviewDto.restaurant.address}
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>`;
+                                            <a href="http://map.daum.net/link/search/${reviewDto.restaurant.name} ${reviewDto.restaurant.address}" target="_blank" style="font-weight: 600; color: aliceblue">
+                                                                               <i class="fa fa-map-marker">${reviewDto.restaurant.address}</i>
+                                                                           </a>
+                                                                       </p>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                       </li>`;
             return reviewHTML;
         },
 
