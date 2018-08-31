@@ -41,7 +41,71 @@ insert into chat (name) values ('돈까스·회·일식');
 insert into chat (name) values ('야식');
 insert into chat (name) values ('전체');
 
-insert into chat_message (user_id, chat_id, contents, written_time) values (1, 8, '자바지기 채팅!!!', '2018-02-12 20:00:00');
-insert into chat_message (user_id, chat_id, contents, written_time) values (3, 8, '권현아 채팅!!!', '2018-02-12 20:00:00');
-insert into chat_message (user_id, chat_id, contents, written_time) values (4, 8, '송민석 채팅!!!', '2018-02-12 20:00:00');
-insert into chat_message (user_id, chat_id, contents, written_time) values (5, 8, '박주하 채팅!!!', '2018-02-12 20:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (3, 8, '아 오늘 머먹지', '2018-08-30 16:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (4, 8, '이따 축구 볼 때 치맥각', '2018-08-30 16:20:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (5, 8, '어디 치킨 시킬꺼임 님들?', '2018-08-30 17:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (6, 8, '아~ 연애하고 싶다~', '2018-08-30 17:12:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (7, 8, '허니콤보 강추함 ㄱㄱ', '2018-08-30 17:31:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (8, 8, '허니콤보에 레드디핑소스 꼭 시키셈', '2018-08-30 17:43:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (9, 8, '아 퇴근하고 싶다~', '2018-08-30 17:59:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (10, 8, '레드디핑소스 ㅇㅈ~', '2018-08-30 18:01:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (11, 8, '손흥민 면제 가자!!', '2018-08-30 18:20:00');
+
+insert into chat_message (user_id, chat_id, contents, written_time) values (3, 1, '치킨 추천 받는다', '2018-08-30 16:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (4, 1, '맥시칸 닭강정 추천합니다', '2018-08-30 16:20:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (5, 1, '맥주 추천 받는다', '2018-08-30 17:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (6, 1, '치킨은 살 안쪄요', '2018-08-30 17:12:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (7, 1, '살은 내가 쪄요', '2018-08-30 17:31:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (8, 1, '근데 요즘 치킨 왤케 비싸냐', '2018-08-30 17:43:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (9, 1, '아 배고파!!!', '2018-08-30 17:59:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (10, 1, '오늘은 치맥삘이다', '2018-08-30 18:01:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (11, 1, '손흥민 면제 가자!!', '2018-08-30 18:20:00');
+
+insert into chat_message (user_id, chat_id, contents, written_time) values (3, 2, '피자 시키신 분', '2018-08-30 16:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (4, 2, '아 다들 인상 피자', '2018-08-30 16:20:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (5, 2, '??', '2018-08-30 17:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (6, 2, '아~ 연애하고 싶다~', '2018-08-30 17:12:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (7, 2, '피자나라 치킨공주는 피자냐 치킨이냐?', '2018-08-30 17:31:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (8, 2, '도미노가 낫나요 피자헛이 낫나요', '2018-08-30 17:43:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (9, 2, '피자에 케찹 찍어먹으면 존맛입니다 여러분', '2018-08-30 17:59:00');
+
+insert into chat_message (user_id, chat_id, contents, written_time) values (3, 3, '엽떡 땡긴다', '2018-08-30 16:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (4, 3, '삼겹살 먹고 싶네요 소주한잔에', '2018-08-30 16:20:00')
+insert into chat_message (user_id, chat_id, contents, written_time) values (5, 3, '감자탕에 소주한잔하고 싶네요', '2018-08-30 17:00:00'
+insert into chat_message (user_id, chat_id, contents, written_time) values (6, 3, '아~ 연애하고 싶다~', '2018-08-30 17:12:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (7, 3, '엄마가 해준 된장찌개가 그립다ㅠ', '2018-08-30 17:31:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (8, 3, '그러게요ㅜㅜ 엄마가 해준 음식이 최고야', '2018-08-30 17:43
+
+insert into chat_message (user_id, chat_id, contents, written_time) values (3, 4, '아 오늘 머먹지', '2018-08-30 16:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (4, 4, '탕수육 개 땡김', '2018-08-30 16:20:00')
+insert into chat_message (user_id, chat_id, contents, written_time) values (5, 4, '아 연애하고 싶다~', '2018-08-30 17:00:00'
+insert into chat_message (user_id, chat_id, contents, written_time) values (6, 4, '왜 서울은 간짜장에 후라이 안 주냐', '2018-08-30 17:12:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (7, 4, '짜장면이 낫냐 짬뽕이 낫냐', '2018-08-30 17:31:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (8, 4, '아 근데 리얼 중국집 마파두부 존맛임', '2018-08-30 17:43
+insert into chat_message (user_id, chat_id, contents, written_time) values (11, 4, '짜장면 시키신분~', '2018-08-30 18:20:00');
+
+insert into chat_message (user_id, chat_id, contents, written_time) values (3, 5, '아 오늘 머먹지', '2018-08-30 16:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (4, 5, '이따 축구 볼 때 족보각', '2018-08-30 16:20:00')
+insert into chat_message (user_id, chat_id, contents, written_time) values (6, 5, '아~ 연애하고 싶다~', '2018-08-30 17:12:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (7, 5, '불불이족발 먹고싶다 ㅎㅎ', '2018-08-30 17:31:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (9, 5, '아 퇴근하고 싶다~', '2018-08-30 17:59:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (10, 5, '님들 매족 먹어보심?', '2018-08-30 18:01:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (11, 5, '손흥민 면제 가자!!', '2018-08-30 18:20:00');
+
+insert into chat_message (user_id, chat_id, contents, written_time) values (3, 6, '아 오늘 머먹지', '2018-08-30 16:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (4, 6, '회 땡긴다 소주에다가 캬~', '2018-08-30 16:20:00')
+insert into chat_message (user_id, chat_id, contents, written_time) values (5, 6, '연어에 파뭍히고 싶다', '2018-08-30 17:00:00'
+insert into chat_message (user_id, chat_id, contents, written_time) values (6, 6, '아~ 연애하고 싶다~', '2018-08-30 17:12:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (8, 6, '민어는 언제가 맛있나요', '2018-08-30 17:43
+insert into chat_message (user_id, chat_id, contents, written_time) values (9, 6, '사장님 숭어 있나요', '2018-08-30 17:59:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (10, 6, '아 가츠동 먹고싶당', '2018-08-30 18:01:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (11, 6, '회 시켰는데 왤케 안오냐~ 낚시 갔냐~', '2018-08-30 18:20:00');
+
+insert into chat_message (user_id, chat_id, contents, written_time) values (3, 7, '아 오늘 머먹지', '2018-08-30 16:00:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (4, 7, '이따 축구 볼 때 치맥각', '2018-08-30 16:20:00')
+insert into chat_message (user_id, chat_id, contents, written_time) values (5, 7, '찜닭같은것도 맛있겠다', '2018-08-30 17:00:00'
+insert into chat_message (user_id, chat_id, contents, written_time) values (6, 7, '아~ 연애하고 싶다~', '2018-08-30 17:12:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (7, 7, '허니콤보 강추함 ㄱㄱ', '2018-08-30 17:31:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (9, 7, '아 퇴근하고 싶다~', '2018-08-30 17:59:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (10, 7, '아 닭발 개땡긴다', '2018-08-30 18:01:00');
+insert into chat_message (user_id, chat_id, contents, written_time) values (11, 7, '곱창도 엄청 땡기네요ㅠ', '2018-08-30 18:20:00');
